@@ -3,15 +3,18 @@
  * https://github.com/facebook/react-native
  */
 
-import React, {
+import React, { Component } from 'react';
+import { View } from 'react-native';
+
+import {
   AppRegistry,
-  Component,
   StyleSheet,
-  Text,
-  View
+  Text
 } from 'react-native';
 
 class CameraProject extends Component {
+
+  
   render() {
     return (
       <View style={styles.container}>
@@ -49,3 +52,5 @@ const styles = StyleSheet.create({
 });
 
 AppRegistry.registerComponent('CameraProject', () => CameraProject);
+
+module.exports = CameraProject;

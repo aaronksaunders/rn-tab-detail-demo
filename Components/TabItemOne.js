@@ -1,8 +1,10 @@
-import React, {
+import React, { Component } from 'react';
+import { View } from 'react-native';
+
+import {
     StyleSheet,
     TabBarIOS,
     Text,
-    View,
     Navigator
 } from 'react-native';
 import NavigationBar from 'react-native-navbar';
@@ -91,7 +93,7 @@ export default class TabItemOne extends React.Component {
                     } }
                     renderScene={(route, navigator) => {
                         // count the number of func calls
-                        console.log(route, navigator);
+                        //console.log(route, navigator);
 
                         if (route.component) {
                             return React.createElement(route.component, { navigator });

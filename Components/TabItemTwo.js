@@ -1,9 +1,12 @@
-import React, {
+import React, { Component } from 'react';
+import { View } from 'react-native';
+
+import {
     StyleSheet,
     TabBarIOS,
-    Text,
-    View,
+    Text
 } from 'react-native';
+
 import NavigationBar from 'react-native-navbar';
 
 export default class TabItemTwo extends React.Component {

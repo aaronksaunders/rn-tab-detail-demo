@@ -3,13 +3,14 @@
  * https://github.com/facebook/react-native
  */
 
-import React, {
+import React, { Component } from 'react';
+import { View } from 'react-native';
+
+import  {
   AppRegistry,
-  Component,
   StyleSheet,
   Text,
   Image,
-  View
 } from 'react-native';
 
 import TabBarContainer from './Components/TabBarContainer'
@@ -33,9 +34,9 @@ class CameraProject extends Component {
     });
   }
 
-render() {
-  return <TabBarContainer/>
-}
+  render() {
+    return <TabBarContainer/>
+  }
   render_old() {
     return (
       <View style={styles.container}>
@@ -75,3 +76,5 @@ const styles = StyleSheet.create({
 });
 
 AppRegistry.registerComponent('CameraProject', () => CameraProject);
+
+module.exports = CameraProject;

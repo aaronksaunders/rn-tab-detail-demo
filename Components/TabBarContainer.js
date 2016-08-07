@@ -1,8 +1,10 @@
-import React, {
+  import React, { Component } from 'react';
+  import { View } from 'react-native';
+
+import {
     StyleSheet,
     TabBarIOS,
-    Text,
-    View,
+    Text
 } from 'react-native';
 import TabItemOne from '../Components/TabItemOne'
 import TabItemTwo from '../Components/TabItemTwo'
